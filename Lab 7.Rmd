@@ -10,3 +10,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 I'm Kaitlyn and I am adding some text here to see if Ashley can get this file.
+
+I am Ashley and I am adding some super exciting text here. 

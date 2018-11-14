@@ -15,3 +15,24 @@ I'm Kaitlyn and I am adding some text here to see if Ashley can get this file.
 =======
 Here is some more boring text for you to look at
 >>>>>>> 081ba8da9bc5a03af6172cadd87d0e4b4759f438
+
+
+#Creator
+Getting gc_df.csv data, loading the tidyverse, and getting some summary counts
+```{r}
+
+library(tidyverse)
+gc_df<- read_csv("gc_df.csv")
+
+# filter function gets rid of NA's in the columns that we want
+get_guns <- gc_df %>%
+  filter(gender != "NA", make_get_guns != "NA")%>%
+  count(gender, make_get_guns)%>%
+  spread(make_get_guns, n)%>%
+  select(-gender) #takes out the male and female column
+  
+rownames(get_guns) <- c("Female", "Male")
+  
+```
+
+

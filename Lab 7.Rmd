@@ -12,7 +12,6 @@ knitr::opts_chunk$set(echo = TRUE)
 I'm Kaitlyn and I am adding some text here to see if Ashley can get this file.
 
 <<<<<<< HEAD
-I am Ashley and I am adding some super exciting text here. 
 =======
 Here is some more boring text for you to look at
 >>>>>>> 081ba8da9bc5a03af6172cadd87d0e4b4759f438
